@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <form method="get" action="http://127.0.0.1:8888/user" target="_blank">
+        <div style="display: none;">
+            <input type="hidden" name="name" value="张三" />
+            <input type="hidden" name="age" value="10" />
+            <input type="checkbox" name="follow" value="news" checked="checked" />
+            <input type="checkbox" name="follow" value="NBA" checked="checked" />
+            <input type="checkbox" name="follow" value="IT" checked="checked" />
+        </div>
+        <input type="submit" value="GET" />
+    </form>
+    <form method="post" action="http://127.0.0.1:8888/user" target="_blank">
+        <div style="display: none;">
+            <input type="hidden" name="name" value="张三" />
+            <input type="hidden" name="age" value="10" />
+            <input type="checkbox" name="follow" value="news" checked="checked" />
+            <input type="checkbox" name="follow" value="NBA" checked="checked" />
+            <input type="checkbox" name="follow" value="IT" checked="checked" />
+        </div>
+        <input type="submit" value="POST" />
+    </form>
+    <form method="post" action="http://127.0.0.1:8888/user" enctype="multipart/form-data" target="_blank">
+        <div style="display: none;">
+            <input type="hidden" name="name" value="张三" />
+            <input type="hidden" name="age" value="10" />
+            <input type="checkbox" name="follow" value="news" checked="checked" />
+            <input type="checkbox" name="follow" value="NBA" checked="checked" />
+            <input type="checkbox" name="follow" value="IT" checked="checked" />
+        </div>
+        <input type="file" name="myFile" />
+        <input type="submit" value="FILE" />
+    </form>
+
+</body>
+</html>
